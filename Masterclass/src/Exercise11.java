@@ -33,7 +33,7 @@ public class Exercise11 {
                     System.out.println("Nine");
                     break;
                 default:
-                    System.out.println("Invalid number");
+                    System.out.println("Other number");
                     break;
         }
     }
