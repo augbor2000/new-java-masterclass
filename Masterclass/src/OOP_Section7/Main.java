@@ -36,6 +36,7 @@ public class Main {
 
         //Person
 
+        /*
         Person  person = new Person();
         person.setFirstName("John");
         person.setLastName("Doe");
@@ -45,6 +46,17 @@ public class Main {
         System.out.println(person.getAge());
         System.out.println(person.getFullName());
         System.out.println(person.isTeen());
+
+    }
+
+         */
+
+        // CONSTRUCTOR CHALLENGE EXERCISE
+
+        Customer customer = new Customer("Stefan",200,"stefan@gmail.com");
+        System.out.println(customer.getEmailAddress());
+        System.out.println(customer.getName());
+        System.out.println(customer.getCreditLimit());
 
     }
 }
