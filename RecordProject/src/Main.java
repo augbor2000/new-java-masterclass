@@ -1,7 +1,7 @@
 
 public class Main {
     public static void main(String[] args) {
-
+        /*
         for(int i = 1; i <= 5; i++){
             LPAStudent s = new LPAStudent("s92300",
                     switch(i){
@@ -27,8 +27,14 @@ public class Main {
 
             System.out.println(pojoStudent.getName() + "is taking " + pojoStudent.getClassList());
             System.out.println(recordStudent.name() + "is taking " + recordStudent.classList());
-
-
         }
+
+         */
+
+        Wall wall = new Wall(5,4);
+        System.out.println("The area of the wall is " + wall.getArea());
+        wall.setHeight(-1);
+        System.out.println(wall.getHeight());
+        System.out.println(wall.getWidth());
     }
 }
