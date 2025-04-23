@@ -18,6 +18,43 @@ public class Dog extends Animal {
         this.tailShape = tailShape;
     }
 
+
+    public void makeNoise(){
+        if(type == "Wolf"){
+            System.out.println("Ow Woooooooo!");
+        }
+        bark();
+        System.out.println();
+    }
+
+    public void move(String speed){
+        super.move(speed);
+        // System.out.println("Dog walks , run and wag their tail");
+        if(speed =="slow"){
+            walk();
+            wagTail();
+        }else{
+            run();
+            bark();
+        }
+
+    }
+
+    private void bark(){
+        System.out.println("Woof ! ");
+    }
+
+    private void run(){
+        System.out.println("Dog Running");
+    }
+
+    private void walk(){
+        System.out.println("Dog Walking");
+    }
+
+    private void wagTail(){
+        System.out.println("Tail Wagging");
+    }
     @Override
     public String toString() {
         return "Dog{" +
